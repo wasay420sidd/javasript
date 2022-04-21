@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var news = parseFloat ( prompt ( "How many puri do you want  ?"));
+        var  totalpuri = news * 29 ; 
+        var  halwa = parseFloat ( prompt ( "How many halwa do you want  ?")); 
+        var  aloo = parseFloat ( prompt ( "How many aloo do you want  ?")); 
+        var  chole = parseFloat ( prompt ( "How many chole do you want  ?")); 
+        var  achar = parseFloat ( prompt ( "How many achar do you want  ?")); 
+        var halwabill = halwa * 20;
+        var aloobill = aloo * 55;
+        var chalebill = chole * 100;
+        var acharbill = achar * 15; 
+        var total = totalpuri + halwabill + aloobill + chalebill + acharbill ;
+        var tax = total * 0.16 ;
+        var amount =  total + tax ;
+
+        document.write( "Quanity " + news + "<br> <hr/>" )
+        document.write( "puriBill " + totalpuri + "<br> <hr/>" )
+        document.write( "Aloo " + aloobill  + "<br> <hr/>")
+        document.write( "chale " + chalebill + "<br> <hr/>" )
+        document.write( "achar " + acharbill  + "<br> <hr/>")
+        document.write( "total bill you have to pay " + total  + "<br> <hr/>")
+        document.write( "+GST " + amount  + "<br> <hr/>")
+
+
+
+
+
+    </script>
+</body>
+</html>
